@@ -213,11 +213,11 @@
 
         ARROW_R {
             bindings = <
-&kp TILDE  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5    &trans  &kp F6         &kp F7       &kp F8      &kp F9         &kp F10         &trans
-&trans     &kp F12  &trans  &trans  &trans  &trans    &trans  &kp HOME       &kp PAGE_UP  &kp UP      &kp PAGE_DOWN  &kp MINUS       &kp EQUAL
-&trans     &trans   &trans  &trans  &trans  &trans    &trans  &kp END        &kp LEFT     &kp DOWN    &kp RIGHT      &kp APOSTROPHE  &trans
-&trans     &trans   &trans  &trans  &trans  &trans    &trans  &kp LC(LA(V))  &kp LC(V)    &kp LC(C)   &kp LC(X)      &kp LC(Z)       &kp LC(Y)
-&trans     &trans   &trans  &trans  &trans  &trans    &trans  &trans         &trans       &kp DELETE  &trans         &trans
+&kp TILDE  &kp F1   &kp F2         &kp F3    &kp F4     &kp F5      &trans  &kp F6         &kp F7       &kp F8      &kp F9         &kp F10         &trans
+&trans     &kp F12  &kp PAGE_DOWN  &kp UP    &kp PG_UP  &kp HOME    &trans  &kp HOME       &kp PAGE_UP  &kp UP      &kp PAGE_DOWN  &kp MINUS       &kp EQUAL
+&trans     &trans   &kp LEFT       &kp DOWN  &kp RIGHT  &kp END     &trans  &kp END        &kp LEFT     &kp DOWN    &kp RIGHT      &kp APOSTROPHE  &trans
+&trans     &trans   &trans         &trans    &trans     &trans      &trans  &kp LC(LA(V))  &kp LC(V)    &kp LC(C)   &kp LC(X)      &kp LC(Z)       &kp LC(Y)
+&trans     &trans   &trans         &trans    &trans     &trans      &trans  &trans         &trans       &kp DELETE  &trans         &trans
             >;
 
             display-name = "ARROW_R";
@@ -242,11 +242,11 @@
             label = "MOUSE_R";
             display-name = "MOUSE_R";
             bindings = <
-&kp TILDE  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans           &trans          &trans          &trans           &trans          &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &msc SCRL_LEFT   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp C_PREVIOUS  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(W)       &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp LC(LA(V))    &kp LC(V)       &kp LC(C)       &kp LC(C)        &kp LC(Z)       &kp LC(Y)
-&trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &mkp LCLK        &mkp MCLK       &mkp RCLK       &trans           &trans
+&none  &none           &none           &none           &none           &none              &mmv MOVE_UP     &none            &none           &none           &none            &none           &none
+&none  &kp C_PREVIOUS  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP    &msc SCRL_LEFT     &mmv MOVE_DOWN   &msc SCRL_LEFT   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp C_PREVIOUS  &none
+&none  &kp LC(W)       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &msc SCRL_RIGHT    &mmv MOVE_LEFT   &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(W)       &none
+&none  &none           &none           &none           &none           &none              &mmv MOVE_RIGHT  &none            &none           &none           &none            &none           &none
+&none  &none           &none           &mkp LCLK       &mkp RCLK       &none              &mkp LCLK        &mkp LCLK        &mkp MCLK       &mkp RCLK       &none            &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
